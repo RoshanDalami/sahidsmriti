@@ -20,7 +20,7 @@ export default function ServicePage(){
             </h1>
             <GiDna2 className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
-        <div className=" flex flex-col md:flex-row flex-wrap justify-center items-center ">
+        <div className=" flex flex-col md:flex-row flex-wrap justify-center items-center  ">
             {ServicePath && ServicePath.map((item)=>{
                 return <RoundedCard key={item.id} title={item.title} icon={item.image} path={item.path} id={item.id} />
             })}
