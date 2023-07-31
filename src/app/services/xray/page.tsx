@@ -20,9 +20,9 @@ export default function XrayPage(){
             <LiaXRaySolid className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
 
-            <div className="bg-white p-4 flex flex-col md:flex-row ">
+            <div className="bg-rose-600 p-4 flex flex-col md:flex-row ">
             <Image src={radioImage} alt="radiographer svg image" className="w-[500px]"/>
-            <p className="ml-5 p-6 text-justify text-base md:text-xl md:font-medium ">
+            <p className="ml-5 p-6 text-white text-justify text-base md:text-xl md:font-medium ">
             Radiography is a diagnostic imaging technique that utilizes X-rays to create detailed images of the internal structures of the human body. It plays a crucial role in modern medicine, helping healthcare professionals diagnose and monitor various medical conditions and injuries. During a radiographic examination, a controlled dose of X-rays passes through the body and is absorbed differently by various tissues, producing an image on a detector or film. Dense structures like bones appear white, while softer tissues appear in shades of gray, allowing healthcare providers to visualize abnormalities, fractures, tumors, or other conditions. Radiography is a non-invasive and widely used tool, providing valuable insights for accurate medical assessments and treatment planning.
             </p>
             </div>

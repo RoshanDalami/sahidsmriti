@@ -1,12 +1,14 @@
 'use client';
 import { Lab } from "../../../../public/Data/Lab";
 import Card from '@/app/Components/Card';
+import Image from "next/image";
 import { GiTestTubes } from "react-icons/gi";
+import labImage from '../../../../public/assets/lab.svg'
 
 export default function LabPage(){
     return(
         <div>
-            <div className="bg-rose-600 h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
+            <div className="bg-rose-600 h-[300px] p-4 flex flex-col items-center md:items-center justify-evenly md:flex-row md:justify-between ">
             <div className="flex flex-col">
 
             <p className=" text-white" >Sahidsmriti Samudayik Hospital</p>
@@ -17,9 +19,24 @@ export default function LabPage(){
             </h1>
             <GiTestTubes className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
-        <h1>Our Lab Assistant</h1>
-        
+        <div className="flex flex-col items-center md:flex-row bg-rose-600  ">
+            <section >
+            <Image src={labImage} alt="" />
+            </section>
+            <section className="text-2xl text-white ">
+                <p className=" text-justify  p-4">
+                    We provide best possible lab results our high-tech machines. We do all kinds of testing Blood , Urine , Platelets Count etc.
+                    Our Lab technicians are highly qualified and best at there job. !
+                </p>
+            </section>
+        </div>
 
+
+        
+<div className="flex items-center justify-center p-3">
+
+        <h1 className="text-4xl ">Our Lab Assistant</h1>
+</div>
         <div className="flex flex-wrap justify-center">
             {
                 Lab && Lab.map((item)=>{

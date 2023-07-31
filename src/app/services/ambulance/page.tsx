@@ -21,8 +21,9 @@ export default function AmbulancePage(){
         <div className="w-[400px] h-[300px] justify-center md:w-[800px] ">
             <Image src={ambulance} alt=""/>
         </div>
-        <div className="bg-rose-600 w-full flex items-center justify-center rounded-b-lg ">
-            <h1 className="text-4xl  text-white opacity-50 md:mr-16 font-bold ">Ambulance Contact : <span className="text-2xl"> 9804470949 </span> </h1>
+        <div className="bg-rose-600 w-full flex items-center p-7 justify-center rounded-b-lg ">
+            <h1 className="text-4xl  text-white opacity-50 md:mr-10 font-bold ">Ambulance Contact : <span className="text-2xl"> +9779867019999,
++9779857080725  </span> </h1>
         </div>
         </div>
        </div>

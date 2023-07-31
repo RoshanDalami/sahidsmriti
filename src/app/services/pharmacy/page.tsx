@@ -17,6 +17,22 @@ export default function PharmacyPage(){
             </h1>
             <GiMedicines className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
+
+        <div className="bg-rose-600 p-6 flex flex-col justify-center items-center md:flex-row">
+            <section className='text-[300px] text-white'>
+                <GiMedicines  />
+            </section>
+            <section className=" text-white ml-6">
+                <p className="text-4xl">
+                Discover Your Path to Wellness at Our Pharmacy!
+                <br />
+                </p>
+                <span className=" text-[15px] text-justify">
+                Our team of knowledgeable pharmacists is here to assist you with expert advice, medication management, and a wide range of high-quality products.
+                    </span> 
+            </section>
+        </div>
+        <h1 className="text-3xl text-center p-6 ">Our Pharmacist</h1>
             <div className="flex flex-wrap justify-center">
 
             {

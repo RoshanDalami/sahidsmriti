@@ -5,8 +5,8 @@ import { MdBabyChangingStation } from "react-icons/md";
 
 export default function BirthingPage(){
     return(
-        <div>
-            <div className="bg-rose-600 h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
+        <div className="bg-rose-600">
+            <div className=" h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
             <div className="flex flex-col">
 
             <p className=" text-white" >Sahidsmriti Samudayik Hospital</p>
@@ -17,14 +17,20 @@ export default function BirthingPage(){
             </h1>
             <MdBabyChangingStation className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
+        <div className="flex flex-col md:flex-row">
+
             <section>
                 <Image src={Birthing} alt="birthing" />
             </section>
-            <section>
-                    <p>
-                        
+            <section className="text-white p-6 text-justify">
+                    <p className="text-4xl text-medium ">
+                    Welcome to Our Tranquil Birthing Center
                     </p>
+                    <span className="  ">
+                    At our birthing center, we celebrate the miracle of childbirth by providing expectant parents with a serene and supportive environment for this extraordinary journey. Our team of experienced and compassionate midwives, nurses, and healthcare professionals is dedicated to making your birthing experience truly special.
+                    </span>
             </section>
+        </div>
 
         </div>
     )
