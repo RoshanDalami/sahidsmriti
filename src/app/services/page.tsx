@@ -7,7 +7,7 @@ export default function ServicePage(){
    
     
     return(
-        <div className="">
+        <div className="flex flex-col justify-center ">
             
         <div className="bg-rose-600 h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
             <div className="flex flex-col">
