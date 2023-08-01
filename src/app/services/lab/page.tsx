@@ -23,8 +23,8 @@ export default function LabPage(){
             <section >
             <Image src={labImage} alt="" />
             </section>
-            <section className="text-2xl text-white ">
-                <p className=" text-justify  p-4">
+            <section className=" text-white ">
+                <p className=" p-4 text-justify">
                     We provide best possible lab results our high-tech machines. We do all kinds of testing Blood , Urine , Platelets Count etc.
                     Our Lab technicians are highly qualified and best at there job. !
                 </p>
