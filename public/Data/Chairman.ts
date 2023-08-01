@@ -1,5 +1,5 @@
 
-import ChairmanImg from '../assets/doctor01.jpeg'
+import ChairmanImg from '../assets/administator/chairman.jpeg'
 
 export const Chairman = [
     {

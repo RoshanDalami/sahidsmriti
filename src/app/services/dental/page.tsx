@@ -22,7 +22,7 @@ const DentalPage = () => {
         <section className="md:w-[700px]">
           <Image src={DentalImage} alt="dental Image" />
         </section>
-        <section className="px-10">
+        <section className="px-10 py-5">
           <p className="text-[30px]">🦷 Your Smile, Our Passion: Welcome to Our Dental Practice! 🦷</p>
           <br />
           <span className="text-justify">
