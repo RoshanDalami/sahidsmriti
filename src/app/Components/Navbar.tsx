@@ -56,7 +56,7 @@ export default function NavBar() {
       </nav>
     </div >
       <div className="md:hidden relative">
-      {hamBurger &&  <motion.div className="flex flex-col bg-slate-200 py-4 px-4  h-80"
+      {hamBurger &&  <motion.div className="flex flex-col text-black  bg-slate-200 py-4 px-4  h-80"
       initial={{scaleY:0 , originY:0}}
       animate={{scaleY:1}}
       transition={{duration:.3 , ease:'easeInOut'}}
@@ -71,7 +71,7 @@ export default function NavBar() {
             ['Gallery','/gallery'],
         ].map(([title,url])=>(
             <Link href={url} key={nanoid()}> 
-            <li className="py-2 px-4 text-black hover:bg-blue-300 hover:text-white hover:rounded-lg  list-none " onClick={()=>{setHamBurger(false)}}>
+            <li className="py-2 px-4 hover:text-white hover:bg-rose-600  hover:rounded-lg  list-none  " onClick={()=>{setHamBurger(false)}}>
 
             {title}
             </li>
