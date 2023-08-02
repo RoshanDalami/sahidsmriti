@@ -5,6 +5,7 @@ import serviceImage from "../../public/assets/24-7.png";
 import RoundedCard from "./Components/RoundedCard";
 import Link from "next/link";
 import { MiddleData } from "../../public/Data/middleData";
+import HomeMid from "./Components/homeComponent";
 
 export default function Home() {
   return (
@@ -19,25 +20,29 @@ export default function Home() {
           MiddleData.map((item) => {
             return (
               <Link href={`${item.path}`} key={item.id}>
-                <div className="bg-rose-600 hover:bg-rose-500 flex justify-between m-2 w-[400px]  rounded  md:p-5   "  >
-                  <div className=" group  overflow-hidden flex py-2 px-4   items-center  ">
+                <div className="bg-rose-600 hover:bg-rose-500 flex justify-between m-2 w-[400px]  rounded  md:p-5   ">
+                  <div className=" group  overflow-hidden flex py-4 px-4   items-center  ">
                     <section>
                       {
-                        < item.image className="text-5xl  text-white font-normal group-hover:text-white transition-all ease-in-out " />
+                        <item.image className="text-5xl  text-white font-normal group-hover:text-white transition-all ease-in-out " />
                       }
                     </section>
-                    <section className="flex items-center  ml-10 md:ml-0 ">
+                    <section className="flex items-center  ml-10 md:ml-4 ">
                       <h1 className="text-center  text-xl font-medium text-white">
                         {item.title}
                       </h1>
                     </section>
                   </div>
-                  
                 </div>
               </Link>
-              
             );
           })}
+      </div>
+      <div >
+        <section>
+          <HomeMid />
+        </section>
+
       </div>
     </>
   );

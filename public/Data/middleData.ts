@@ -1,6 +1,7 @@
 
 import {GiMedicinePills} from 'react-icons/gi'
 import {BiTimer} from 'react-icons/bi'
+import { LiaAmbulanceSolid } from "react-icons/lia";
 
 export const MiddleData = [
     {
@@ -17,6 +18,15 @@ export const MiddleData = [
         title: '24/7 Service Assurance',
         image : BiTimer,
         path:'/contact',
+        description : "Best treatment Around Area",
+
+
+    },
+    {
+        id:3,
+        title: 'Emergency Service',
+        image : LiaAmbulanceSolid,
+        path:'/services/ambulance',
         description : "Best treatment Around Area",
 
 

@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
-import Birthing from "../../../../public/assets/icons/birthing.svg";
+import BirthingImage from "../../../../public/assets/icons/birthing.svg";
 import { MdBabyChangingStation } from "react-icons/md";
+import { Birthing } from "../../../../public/Data/birthing";
+import Card from '../../Components/Card'
 
 export default function BirthingPage() {
   return (
+    <div>
     <div className="bg-rose-600">
       <div className=" h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
         <div className="flex flex-col">
@@ -20,7 +23,7 @@ export default function BirthingPage() {
       </div>
       <div className="flex flex-col md:flex-row">
         <section>
-          <Image src={Birthing} alt="birthing" />
+          <Image src={BirthingImage} alt="birthing" />
         </section>
         <section className="text-white p-6 ">
           <p className="text-4xl text-medium ">
@@ -35,6 +38,18 @@ export default function BirthingPage() {
           </span>
         </section>
       </div>
+    </div>
+    <h1 className="py-4 text-center text-3xl  ">Our Birthing Center Staff</h1>
+    <div className="flex items-center justify-center flex-wrap">
+      {
+        Birthing && Birthing.map((item)=>{
+        return(
+          <Card key={item.id} title={item.title} description={item.degniation} image={item.image} />
+          )  
+          
+        })
+      }
+    </div>
     </div>
   );
 }

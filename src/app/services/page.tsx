@@ -7,7 +7,7 @@ export default function ServicePage(){
    
     
     return(
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center  ">
             
         <div className="bg-rose-600 h-[300px] p-4 flex flex-col md:items-center justify-evenly md:flex-row md:justify-between ">
             <div className="flex flex-col">
@@ -20,7 +20,7 @@ export default function ServicePage(){
             </h1>
             <GiDna2 className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
-        <div className=" flex flex-col md:flex-row flex-wrap justify-center items-center  ">
+        <div className=" flex flex-col mt-10 md:flex-row flex-wrap justify-center items-center  ">
             {ServicePath && ServicePath.map((item)=>{
                 return <RoundedCard key={item.id} title={item.title} icon={item.image} path={item.path} id={item.id} />
             })}
