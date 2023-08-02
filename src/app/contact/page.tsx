@@ -67,7 +67,7 @@ export default function ContactPage() {
         </section>
       </div>
       <div className=" flex justify-center py-5 ">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.958473645258!2d83.78462429436806!3d27.501666893110425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39943c9f76a12b05%3A0x7cb6f4374cce594e!2sSahid%20Smriti%20Samudayik%20Hospital!5e0!3m2!1sen!2snp!4v1690896110860!5m2!1sen!2snp" width="900" height="450"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.958473645258!2d83.78462429436806!3d27.501666893110425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39943c9f76a12b05%3A0x7cb6f4374cce594e!2sSahid%20Smriti%20Samudayik%20Hospital!5e0!3m2!1sen!2snp!4v1690896110860!5m2!1sen!2snp" width="900" height="450"  loading="lazy" />
       </div>
     </div>
   );
