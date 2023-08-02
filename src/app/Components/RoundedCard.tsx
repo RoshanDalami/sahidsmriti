@@ -7,7 +7,6 @@ export default function RoundedCard(props: any) {
     <Link href={`${props.path}`}>
       <div className="bg-rose-600 hover:bg-rose-500 flex justify-between m-2 w-[400px]  rounded  md:p-5   " >
         <div className=" group  overflow-hidden flex py-2 px-4 md:flex-col  items-center  ">
-
         <section>
           {
             <props.icon className="text-5xl  text-white font-normal group-hover:text-white transition-all ease-in-out " />

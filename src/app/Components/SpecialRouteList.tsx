@@ -15,6 +15,7 @@ export default function SpecialRouteList() {
                 title={item.title}
                 icon={item.image}
                 path={item.path}
+                
               />
             );
           })}

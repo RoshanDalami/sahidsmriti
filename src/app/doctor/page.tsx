@@ -18,10 +18,16 @@ export default function DoctorPage() {
             </h1>
             <FaUserDoctor className="text-white text-[300px] absolute opacity-20 md:opacity-10" />
         </div>
-      <p className="bg-white  p-4 text-justify  shadow-md  "  >
+        <div className="flex justify-center">
+
+      <p className="bg-white  p-4 text-justify    w-[1100px]  "  >
       Sahidsmriti Samudayik Hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment. The best-known type of hospital is the general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to minor surgery
       </p>
-      <div className="flex flex-wrap justify-center  ">
+        </div>
+        <h1 className="text-center text-3xl my-3">Our Doctors</h1>
+      <div className="flex flex-wrap justify-center my-10  ">
+
+
         {Doctor &&
           Doctor.map((item) => {
             return (
