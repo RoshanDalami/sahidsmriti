@@ -14,3 +14,11 @@ export async function GET(){
         return NextResponse.json({error:error.message})
     }
 }
+
+export async function DELETE({_id}:any){
+    try{
+        return await Appointments.deleteOne({_id:_id})
+    }catch(error:any){
+        return NextResponse.json({message : 'Appointment Cannot be deleted'})
+    }
+}
