@@ -6,6 +6,8 @@ import RoundedCard from "./Components/RoundedCard";
 import Link from "next/link";
 import { MiddleData } from "../../public/Data/middleData";
 import HomeMid from "./Components/homeComponent";
+import AppointmentForm from "./Components/AppointmentForm";
+import FooterPage from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -39,11 +41,12 @@ export default function Home() {
           })}
       </div>
       <div >
-        <section>
           <HomeMid />
-        </section>
-
       </div>
+      <div >
+        <AppointmentForm/>
+      </div>
+      
     </>
   );
 }
