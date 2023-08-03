@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 import axios from 'axios'
 import { useParams } from "next/navigation";
 
@@ -22,7 +22,10 @@ export default function AppointmentDetails(){
     
     return(
         <>
-        <div className="bg-slate-500 w-[400px] mx-auto" >
+        <div className="flex flex-col justify-center items-center">
+
+        <h1 className="text-2xl text-center">Patient Details</h1>
+        <div className="bg-slate-400 w-[400px] mx-auto mt-10 p-10 text-white rounded-lg" >
             <h1 className="text-xl">
                 Patient Name : { details.name}
             </h1>
@@ -36,6 +39,13 @@ export default function AppointmentDetails(){
                 Booking Date : {details.date}
             </h1>
             
+        </div>
+        <Link href={'/appointment'} >
+        <button className="bg-blue-600 px-4 py-2 text-white hover:bg-blue-500 mt-10">
+
+        View Appointments
+        </button>
+        </Link>
         </div>
 
         </>
