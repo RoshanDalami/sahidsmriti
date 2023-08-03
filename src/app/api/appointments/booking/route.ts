@@ -1,7 +1,7 @@
 import {connect} from '@/dbConfig/dbConfig';
 
 import Appointments from '@/Model/appointmentModel';
-import App from 'next/app';
+
 import { NextRequest,NextResponse } from 'next/server';
 
 connect();
