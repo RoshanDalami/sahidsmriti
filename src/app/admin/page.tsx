@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import LoginPage from "../Components/LoginForm";
 export default function Admin(){
     const [data,setData] = useState([]);
 
@@ -31,7 +32,7 @@ return(
             })
         }
         <button onClick={getData} className="bg-red-500 p-4">Get Data</button>
-
+        <LoginPage/>
     </div>
 )
 }

@@ -1,9 +1,14 @@
 "use client";
-
+import Link from 'next/link';
 import {FaUserDoctor,FaBed} from 'react-icons/fa6'
 import {BiHappyHeartEyes} from 'react-icons/bi'
+import { useRouter } from 'next/navigation';
 
 export default function FooterPage() {
+  const router = useRouter();
+  const redirect = ()=>{
+    router.push('/#booking')
+  }
   return (
     <div>
       <div className='flex flex-col flex-wrap md:flex-row justify-between'>
@@ -31,7 +36,13 @@ export default function FooterPage() {
         <div className='  flex justify-center items-center'>
        
           <section className="p-10 flex flex-col justify-center items-center rounded-lg text-white my-3 md:mx-3">
-            <button className='px-8 py-2 bg-rose-600'>Book Now</button>
+            
+            
+            <button className='px-8 py-2 bg-rose-600'
+            onClick={redirect}
+            >Book Now</button>
+
+            
           </section>
         </div>
        

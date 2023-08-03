@@ -1,13 +1,14 @@
 "use client";
 import CarouselComponent from "./Components/Carousel";
-import Image from "next/image";
-import serviceImage from "../../public/assets/24-7.png";
-import RoundedCard from "./Components/RoundedCard";
+
 import Link from "next/link";
 import { MiddleData } from "../../public/Data/middleData";
 import HomeMid from "./Components/homeComponent";
-import AppointmentForm from "./Components/AppointmentForm";
-import FooterPage from "./Components/Footer";
+import BookingForm from "./booking/page";
+
+import { useState } from "react";
+
+import axios from 'axios';
 
 export default function Home() {
   return (
@@ -43,8 +44,8 @@ export default function Home() {
       <div >
           <HomeMid />
       </div>
-      <div >
-        <AppointmentForm/>
+      <div id="booking">
+     <BookingForm />
       </div>
       
     </>

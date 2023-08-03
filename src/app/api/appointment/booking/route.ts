@@ -1,34 +1,21 @@
-import { connect } from "@/dbConfig/dbConfig";
-import Appointments from "@/Model/appointmentModel";
-import { NextRequest, NextResponse } from "next/server";
+import {connect} from '@/dbConfig/dbConfig';
+import Appointments from '@/Model/appointmentModel';
 
+
+import { NextRequest,NextResponse } from 'next/server';
 connect();
-
-export async function POST(request: NextRequest) {
-  try {
-    const reqBody = await request.json();
-
-    const { name, date, number, email, message } = reqBody;
-
-    const newAppointment = new Appointments({
-      name,
-      date,
-      number,
-      email,
-      message,
-    });
-    const bookedAppointment = await newAppointment.save();
-    if (bookedAppointment) {
-      console.log(reqBody);
+export async function POST(request:NextRequest){
+    try {
+        const reqbody = await request.json();
+        const newAppointment = new Appointments({
+            name:reqbody.name,
+            date:reqbody.date,
+            number:reqbody.number,
+            email:reqbody.email,
+            message:reqbody.message
+        });
+        await newAppointment.save();
+    } catch (error:any) {
+        return NextResponse.json({error:error.message});
     }
-    return NextResponse.json({
-      message: "appointment booked ",
-      bookedAppointment,
-    });
-  } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message + "message from server" },
-      { status: 500 }
-    );
-  }
 }
