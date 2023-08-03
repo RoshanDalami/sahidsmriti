@@ -18,8 +18,8 @@ export default function BookingForm() {
     const onSubmitHandler = async (e:any)=>{
        try {
         e.preventDefault();
-        const response = await axios.post('api/appointment/booking',appointment)
-          console.log(response.data);
+        const response = await axios.post('api/appointments/booking',appointment);
+        console.log(response.data)
           setAppointment({
             name:'',
             number:'',
