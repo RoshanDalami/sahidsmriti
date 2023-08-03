@@ -16,7 +16,7 @@ export default function AppointmentPage(){
     }
     useEffect(()=>{
         getData();
-    },[])
+    },[data])
 
     return(
         <div>
