@@ -8,7 +8,7 @@ import { TbH1 } from "react-icons/tb";
 
 export default function AppointmentPage() {
   const [data, setData] = useState([]);
-  const { push } = useRouter();
+ 
 
   const getData = async () => {
     const response = await axios.get("api/appointments/appointment");
@@ -18,14 +18,6 @@ export default function AppointmentPage() {
   const deleteData = async () => {
     const response = await axios.delete("api/appointments/appointment");
   };
-  const getDetails = async()=>{
-    try {
-        const response = await axios.get('api/appointments/details');
-        console.log(response)
-    } catch (error:any) {
-        console.log('failed to get deails')
-    }
-}
   useEffect(()=>{
     getData();
   },[])
@@ -49,13 +41,7 @@ export default function AppointmentPage() {
             >
               <p className="p-3 font-bold">{item.name}</p>
               <div className="flex justify-evenly mr-10">
-                <button
-                  className="bg-red-600 px-4 py-2 text-white"
-                  onClick={deleteData}
-                >
-                  Delete
-                </button>
-                <Link href={`appointment/${item._id}`} onClick={getDetails}  >
+                <Link href={`appointment/${item._id}`} >
                   <button  className="bg-blue-600 px-4 py-2 text-white">
                     view Detail
                   </button>
