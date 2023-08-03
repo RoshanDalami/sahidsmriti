@@ -6,7 +6,13 @@ import axios from 'axios'
 import { useParams } from "next/navigation";
 
 export default function AppointmentDetails(){
-    const[details,setDetails] = useState({});
+    const[details,setDetails] = useState({
+        name:'',
+        number:'',
+        email:'',
+        date:'',
+
+    });
     const {id} = useParams();
     const getDetails = async()=>{
         try {
@@ -25,7 +31,7 @@ export default function AppointmentDetails(){
         <div className="flex flex-col justify-center items-center">
 
         <h1 className="text-2xl text-center">Patient Details</h1>
-        <div className="bg-slate-400 w-[400px] mx-auto mt-10 p-10 text-white rounded-lg" >
+        <div className="bg-slate-400 w-[800px] mx-auto mt-10 p-10 text-white rounded-lg" >
             <h1 className="text-xl">
                 Patient Name : { details.name}
             </h1>
