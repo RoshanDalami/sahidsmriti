@@ -4,6 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { TbH1 } from "react-icons/tb";
 
 export default function AppointmentPage() {
   const [data, setData] = useState([]);
@@ -39,7 +40,7 @@ export default function AppointmentPage() {
         Refresh
       </button>
       <div className="mx-10 my-5">
-        {data.map((item: any) => {
+        {data?data.map((item: any) => {
           return (
             <div
               key={item._id}
@@ -62,7 +63,7 @@ export default function AppointmentPage() {
               </div>
             </div>
           );
-        })}
+        }): <h1 className="text-3xl ">Fetching data...</h1> }
       </div>
     </div>
   );
