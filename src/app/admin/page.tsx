@@ -20,19 +20,7 @@ export default function Admin(){
 return(
     <div>
         <h1>Admin</h1>
-        {/* {
-            data && data.map((item:any)=>{
-                return(
-                    <li key={item._id}>
-                            
-                                {item.name}
-                            
-                    </li>
-                )
-            })
-        }
-        <button onClick={getData} className="bg-red-500 p-4">Get Data</button>
-        <LoginPage/> */}
+        <LoginPage/>
     </div>
 )
 }
