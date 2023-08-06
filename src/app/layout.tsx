@@ -36,7 +36,7 @@ export default function RootLayout({
         )}
 
         {children}
-        {(pathname === "/appointment" || pathname === `/appointment/${id}`) ? null : (
+        {(pathname === "/login"||pathname === "/appointment" || pathname === `/appointment/${id}`) ? null : (
           <FooterPage />
         )}
       </body>
