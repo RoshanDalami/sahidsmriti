@@ -33,7 +33,7 @@ export default function AppointmentDetails() {
   return (
     <>
       {!loading ? (
-        <div className="flex flex-col justify-center items-center pb-[150px]">
+        <div className="flex flex-col justify-center items-center mt-[150px] ">
           <h1 className="text-3xl text-center font-bold">Patient Details</h1>
           <div className="bg-slate-400  mx-auto mt-10 p-10 text-white rounded-lg">
             <h1 className="text-xl">Patient Name : {details.name}</h1>

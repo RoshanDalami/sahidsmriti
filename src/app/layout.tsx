@@ -25,20 +25,18 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   const {id} = useParams();
-  console.log(id)
-  console.log(pathname);
   return (
     <html lang="en">
       <CssBaseline />
       <body className={inter.className}>
         <Toaster position="top-center" />
 
-        {(pathname === "/appointment" || pathname === `appointment/${id}`) ? null : (
+        {(pathname === "/appointment" || pathname === `/appointment/${id}`) ? null : (
           <NavBar />
         )}
 
         {children}
-        {(pathname === "/appointment" || pathname === `appointment/${id}`) ? null : (
+        {(pathname === "/appointment" || pathname === `/appointment/${id}`) ? null : (
           <FooterPage />
         )}
       </body>
