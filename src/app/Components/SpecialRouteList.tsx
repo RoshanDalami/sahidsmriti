@@ -6,7 +6,7 @@ import RoundedCard from "./RoundedCard";
 
 export default function SpecialRouteList() {
     return(
-        <div className="p-8 flex flex-col md:flex-row flex-wrap justify-center">
+        <div className="p-8 flex  md:flex-row flex-wrap justify-center">
         {SpecialistServicePath &&
           SpecialistServicePath.map((item) => {
             return (
