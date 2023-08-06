@@ -4,6 +4,7 @@ import { AiOutlineHistory } from "react-icons/ai";
 import { LiaAmbulanceSolid } from "react-icons/lia";
 import {BiTimer} from 'react-icons/bi'
 import {BsFillBalloonHeartFill} from 'react-icons/bs';
+import toast from "react-hot-toast";
 import axios from 'axios';
 
 export default function BookingForm() {
@@ -15,11 +16,14 @@ export default function BookingForm() {
       email:'',
       message:''
     })
+    const [loading,setLoading]=useState(false);
     const onSubmitHandler = async (e:any)=>{
        try {
         e.preventDefault();
+        setLoading(true)
         const response = await axios.post('api/appointments/booking',appointment);
-        console.log(response.data)
+        toast.success('Your Appointment Has been booked')
+
           setAppointment({
             name:'',
             number:'',
@@ -28,7 +32,11 @@ export default function BookingForm() {
             message:''
           })
        } catch (error:any) {
+        toast.error('Appointment Booking Failed...')
         console.log('Appointment Booking failed ...',error.message)
+       }
+       finally{
+        setLoading(false)
        }
     }
 
@@ -58,6 +66,8 @@ export default function BookingForm() {
               placeholder="Phone Number"
               className="px-4 w-full py-2 rounded"
               required
+              maxLength={10}
+              minLength={10}
               onChange={(e)=>setAppointment({...appointment,number:e.target.value})}
               value={appointment.number}
             />
@@ -92,7 +102,7 @@ export default function BookingForm() {
             />
           </div>
           <button  type="submit" className="px-3 py-2 bg-blue-600 rounded text-white font-medium hover:bg-sky-500" >
-            Book Now
+            {loading ?"Booking...":"Book Now"}
           </button>
         </form>
       </div>

@@ -58,6 +58,11 @@ export default function NavBar() {
               </Link>
             ))}
           </ul>
+          <Link href={'/login'} className="hidden md:flex">
+          <button className=" bg-sky-600 py-2 px-4 text-white rounded">
+              For Admin
+          </button>
+          </Link>
 
           <div
             className=" ml-16  md:hidden flex group "
@@ -112,6 +117,11 @@ export default function NavBar() {
               <a href="mailto:hospital.sahidsmriti@gmail.com">
               <LuMail />
               </a>
+              <Link href={'/login'} className="">
+          <button className=" bg-sky-600 py-1 px-4 rounded text-white text-xs">
+              For Admin
+          </button>
+          </Link>
                 
              
             </div>

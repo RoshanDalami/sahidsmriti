@@ -11,7 +11,7 @@ export default function HomeMid(){
             </section>
             <section className="px-4 mx-10 ">
           <h1 className="font-bold text-3xl py-3 ">Namaste</h1>
-          <p className=" text-justify">
+          <p className=" md:text-justify">
             The  Sahid Smriti Samudayik Hospital was established in 2005 AD
             driven by the Vision to provide best medical healthcare to the
             people of Chitwan and its neighboring district so that the people be
