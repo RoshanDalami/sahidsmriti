@@ -10,6 +10,7 @@ import toast from 'react-hot-toast'
 export default function AppointmentPage() {
   const [data, setData] = useState([]);
   const [loading,setLoading] = useState(false);
+  const [search,setSearch] = useState('');
   const router = useRouter();
 
 
@@ -41,6 +42,30 @@ export default function AppointmentPage() {
   useEffect(() => {
     getData();
   }, []);
+  const item = data.filter((item:any)=>{
+    let searchTerm = search.toLowerCase();
+    if(searchTerm !== ''){
+      return item.name.toLowerCase().includes(searchTerm);
+    }else{
+      return data
+    }
+  }).map((item: any) => {
+    return (
+      <div
+        key={item._id}
+        className="rounded bg-slate-300 my-2 flex items-center justify-between flex-wrap "
+      >
+        <p className="p-3 font-bold">{item.name}</p>
+        <div className="flex justify-evenly mr-10">
+          <Link href={`appointment/${item._id}`}>
+            <button className="bg-blue-600 px-4 py-2 text-white">
+              view Detail
+            </button>
+          </Link>
+        </div>
+      </div>
+    );
+  })
 
   return (
     <div>
@@ -57,26 +82,13 @@ export default function AppointmentPage() {
       >
         Logout
       </button>
+      <div className="flex items-center justify-center my-4 ">
+        <input type="text" placeholder="search by patient name " className="border-2 border-slate-400 w-[300px] h-[40px] rounded p-4 text-xl" onChange={(e)=>{setSearch(e.target.value)}}  />
+      </div>
 
       <div className="mx-10 my-5">
         {!loading ? (
-          data.map((item: any) => {
-            return (
-              <div
-                key={item._id}
-                className="rounded bg-slate-300 my-2 flex items-center justify-between flex-wrap "
-              >
-                <p className="p-3 font-bold">{item.name}</p>
-                <div className="flex justify-evenly mr-10">
-                  <Link href={`appointment/${item._id}`}>
-                    <button className="bg-blue-600 px-4 py-2 text-white">
-                      view Detail
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            );
-          })
+          item
         ) : (
             <div className="flex justify-center items-center">
                 <h1 className="text-4xl">
