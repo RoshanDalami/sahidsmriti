@@ -40,7 +40,7 @@ const showPassword = ()=>{
             <CircularProgress/>
         </h1>
     </div>
-      :<div className="flex flex-col items-center justify-center bg-rose-600 p-10 w-[500px] mx-auto rounded ">
+      :<div className="flex flex-col items-center justify-center bg-rose-600 p-10 md:w-[500px] mx-auto rounded ">
         <Image
           src={logo}
           alt=""

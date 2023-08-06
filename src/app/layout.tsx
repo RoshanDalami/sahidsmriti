@@ -18,6 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 //   description: "",
 // };
 
+
 export default function RootLayout({
   children,
 }: {
@@ -27,6 +28,7 @@ export default function RootLayout({
   const {id} = useParams();
   return (
     <html lang="en">
+      <title> Sahid Smriti Samudayiak Hospital </title>
       <CssBaseline />
       <body className={inter.className}>
         <Toaster position="top-center" />
