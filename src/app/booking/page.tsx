@@ -16,11 +16,17 @@ export default function BookingForm() {
       email:'',
       message:''
     })
+    const[notNumber,setNotPhoneNumber] = useState(false)
     const [loading,setLoading]=useState(false);
     const onSubmitHandler = async (e:any)=>{
        try {
         e.preventDefault();
         setLoading(true)
+
+        if( appointment.number.length !== 10 ){
+            setNotPhoneNumber(true)
+            return
+        }
         const response = await axios.post('api/appointments/booking',appointment);
         toast.success('Your Appointment Has been booked')
 
@@ -39,6 +45,7 @@ export default function BookingForm() {
         setLoading(false)
        }
     }
+
 
 
   return (
@@ -62,15 +69,15 @@ export default function BookingForm() {
           </div>
           <div className="my-3">
             <input
-              type="number"
+              type="Number"
               placeholder="Phone Number"
               className="px-4 w-full py-2 rounded"
               required
-              maxLength={10}
-              minLength={10}
+              
               onChange={(e)=>setAppointment({...appointment,number:e.target.value})}
               value={appointment.number}
             />
+           {notNumber && <p className=" text-white">Please enter valid phone number</p>}
           </div>
           <div className="my-3">
             <input

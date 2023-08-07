@@ -78,7 +78,7 @@ const showPassword = ()=>{
             value={admin.password}
           />
           <button className="bg-sky-500 px-3  py-2 text-white mt-2" onClick={showPassword}>
-            show password
+            {type?"Show Password":"Hide Password"}
           </button>
 
           <button

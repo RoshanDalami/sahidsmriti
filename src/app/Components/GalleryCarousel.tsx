@@ -59,7 +59,7 @@ export default function CarouselGallery(props:any) {
                 <Image
                   src={image}
                   alt=""
-                  className=" object-cover h-96 mx-10 rounded "
+                  className=" object-cover h-72 md:h-96 mx-10 rounded "
                 />
               </div>
             );
