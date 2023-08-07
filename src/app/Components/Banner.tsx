@@ -16,20 +16,20 @@ const Banner = (props: any) => {
           <h1 className=" text-4xl text-white font-bold">{props.title}</h1>
           <div className="flex flex-col md:flex-row">
             <Link href={"/services"}>
-              <button className="btn bg-rose-600 rounded-full text-white hover:bg-rose-500 mb-2 ">
+              <button className="btn bg-rose-600 rounded-full text-white hover:bg-rose-500 mb-2 ml-2 ">
                 {" "}
                 View Services
               </button>
             </Link>
             <Link href={"/services/ambulance"}>
-              <button className="btn bg-rose-600 rounded-full text-white hover:bg-rose-500 ">
+              <button className="btn bg-rose-600 rounded-full text-white hover:bg-rose-500 ml-2 ">
                 {" "}
                 Ambulance Services
               </button>
             </Link>
           </div>
         </motion.div>
-        <Image src={props.image} alt="" className=" h-[400px] md:h-[600px]" />
+        <Image src={props.image} alt="" className=" h-[400px] md:h-[700px] " />
       </div>
     </>
   );

@@ -18,7 +18,7 @@ export default function Home() {
           <CarouselComponent />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center mt-[70px] md:mt-[500px] md:flex-row ">
+      <div className="flex flex-col justify-center items-center mt-[100px] md:mt-[600px] md:flex-row ">
         {MiddleData &&
           MiddleData.map((item) => {
             return (
