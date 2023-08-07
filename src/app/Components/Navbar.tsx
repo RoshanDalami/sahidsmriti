@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+
 import logo from "../../../public/assets/logo.jpeg";
 import Image from "next/image";
 import { useState } from "react";
@@ -8,7 +9,7 @@ import { ImCross } from "react-icons/im";
 import { FaFacebookSquare } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { motion } from "framer-motion";
-
+import { NavLink } from "./NavLink";
 import { nanoid } from "nanoid";
 
 export default function NavBar() {
@@ -49,13 +50,13 @@ export default function NavBar() {
               ["Gallery", "/gallery"],
               ["Contact Us", "/contact"],
             ].map(([title, url]) => (
-              <Link
+              <NavLink
                 href={url}
                 key={nanoid()}
                 className={` px-2  hover:text-rose-600 sm:font-normal sm:font-xs md:px-4  md:font-bold md:py-3 lg:px4 lg:py-3`}
               >
                 <li>{title}</li>
-              </Link>
+              </NavLink>
             ))}
           </ul>
           <Link href={'/login'} className="hidden md:flex">
