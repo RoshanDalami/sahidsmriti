@@ -7,8 +7,8 @@ import Card from '@/app/Components/Card';
 
 export default function AdministratorPage(){
  return(
-   <div>
-
+   <div className="bg-gradient-to-t from-blue-300  to-sky-600 ">
+    <h1 className="text-4xl text-center pt-4 text-white">Administrator</h1>
     <div className="flex flex-wrap justify-center ">
         {
             Administrator && Administrator.map((item)=>{
