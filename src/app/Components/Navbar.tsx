@@ -53,7 +53,7 @@ export default function NavBar() {
               <NavLink
                 href={url}
                 key={nanoid()}
-                className={` px-2  hover:text-rose-600 sm:font-normal sm:font-xs md:px-4  md:font-bold md:py-3 lg:px4 lg:py-3`}
+                className={` px-2 sm:font-normal sm:font-xs md:px-4  md:font-bold md:py-3 lg:px4 lg:py-3`}
               >
                 <li>{title}</li>
               </NavLink>

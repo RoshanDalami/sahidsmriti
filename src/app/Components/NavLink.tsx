@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const NavLink = ({ href, exact, children, ...props }:any) => {
   const pathname = usePathname();
-  const active = ' bg-rose-600 rounded'
+  const active = ' bg-rose-600 rounded text-white'
   const isActive = exact ? pathname === href : pathname.startsWith(href);
 
   if (isActive) {
