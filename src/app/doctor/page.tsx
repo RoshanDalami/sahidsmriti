@@ -20,7 +20,7 @@ export default function DoctorPage() {
         </div>
         <div className="flex justify-center">
 
-      <p className="bg-white  p-4 text-justify    w-[1100px]  "  >
+      <p className="bg-white  p-4 md:text-justify    w-[1100px]  "  >
       Sahidsmriti Samudayik Hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment. The best-known type of hospital is the general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to minor surgery
       </p>
         </div>

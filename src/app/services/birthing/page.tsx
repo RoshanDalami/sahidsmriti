@@ -29,7 +29,7 @@ export default function BirthingPage() {
           <p className="text-4xl text-medium ">
             Welcome to Our Tranquil Birthing Center
           </p>
-          <span className=" text-justify ">
+          <span className=" md:text-justify ">
             At our birthing center, we celebrate the miracle of childbirth by
             providing expectant parents with a serene and supportive environment
             for this extraordinary journey. Our team of experienced and

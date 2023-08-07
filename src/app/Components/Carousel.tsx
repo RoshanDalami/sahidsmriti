@@ -1,6 +1,8 @@
 'use client'
 
 import Carousel from 'react-bootstrap/Carousel';
+import sliderImage01 from '../../../public/assets/operation02.jpeg'
+import sliderImage02 from '../../../public/assets/group01.jpeg'
 
 import Banner from './Banner';
 
@@ -11,10 +13,10 @@ function CarouselComponent() {
 
     <Carousel >
       <Carousel.Item>
-        <Banner title={'hello World'}/>
+        <Banner title={'hello World'} image={sliderImage01}/>
       </Carousel.Item>
       <Carousel.Item>
-        <Banner title={'hello Sahidsmriti'}/>
+        <Banner title={'hello Sahidsmriti'} image={sliderImage02} />
       </Carousel.Item>
     </Carousel>
     </div>

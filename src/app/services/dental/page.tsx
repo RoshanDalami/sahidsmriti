@@ -25,7 +25,7 @@ const DentalPage = () => {
         <section className="px-10 py-5">
           <p className="text-[30px]">🦷 Your Smile, Our Passion: Welcome to Our Dental Practice! 🦷</p>
           <br />
-          <span className="text-justify">
+          <span className="md:text-justify">
             At our dental practice, we believe in the power of a healthy and
             confident smile. Our team of skilled and caring dentists,
             hygienists, and staff are dedicated to providing you with

@@ -17,7 +17,7 @@ export default function GynoPage() {
             {" Embracing Women's Health: Expert Gynecology Care "}
            
           </p>
-          <p className=" text-justify p-10">
+          <p className=" md:text-justify p-10">
           Welcome to our gynecology practice, a sanctuary of compassionate and specialized care dedicated to women&apos;s health and well-being. Our team of experienced gynecologists is committed to providing comprehensive and personalized services that empower women to lead healthy, fulfilling lives.
 
 

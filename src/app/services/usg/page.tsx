@@ -26,7 +26,7 @@ export default function UsgPage() {
           <p className="text-2xl  py-4 text-center  text-white ">
             🔍 Discover the Hidden World Within: Ultrasonography Services 🔍
           </p>
-          <span className=" text-justify p-10  text-white">
+          <span className=" md:text-justify p-10  text-white">
             Welcome to our ultrasonography department, where cutting-edge
             technology meets the art of diagnostic imaging. We are dedicated to
             providing you with a window into your body, offering a non-invasive

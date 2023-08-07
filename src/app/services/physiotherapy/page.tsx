@@ -26,7 +26,7 @@ export default function PhysiotherapyPage() {
             {" "}
             Embrace Movement, Embrace Wellness: Discover Physiotherapy with Us!
           </p>
-          <span className="text-justify">
+          <span className="md:text-justify">
             Welcome to our physiotherapy clinic, where healing and empowerment
             through movement are at the core of our approach to healthcare. Our
             team of dedicated and skilled physiotherapists is committed to

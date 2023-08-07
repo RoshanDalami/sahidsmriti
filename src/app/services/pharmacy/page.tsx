@@ -27,7 +27,7 @@ export default function PharmacyPage(){
                 Discover Your Path to Wellness at Our Pharmacy!
                 <br />
                 </p>
-                <span className=" text-[15px] text-justify">
+                <span className=" text-[15px] md:text-justify">
                 Our team of knowledgeable pharmacists is here to assist you with expert advice, medication management, and a wide range of high-quality products.
                     </span> 
             </section>
