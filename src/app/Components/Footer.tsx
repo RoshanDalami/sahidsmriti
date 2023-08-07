@@ -52,13 +52,13 @@ export default function FooterPage() {
       <div className=" bg-rose-600 py-3 ">
       <div className=' flex flex-col md:flex-row p-4 items-center justify-center text-white opacity-70' >
         <div className='flex justify-center items-center mx-5'>
-          <MdOutlineEmail className='text-3xl' />
+          <MdOutlineEmail className='text-2xl' />
           
-          <h1 className='text-2xl ml-5'>hospital.sahidsmriti@gmail.com</h1>
+          <h1 className='text-xl ml-5'>hospital.sahidsmriti@gmail.com</h1>
         </div>
         <div className='flex justify-center items-center'>
-          <BiSolidPhoneCall className='text-3xl' />
-          <h1 className='text-2xl ml-3'>
+          <BiSolidPhoneCall className='text-2xl md:text-3xl' />
+          <h1 className='text-xl md:text-2xl ml-3'>
           078-411055 , 078-590355
           </h1>
         </div>
