@@ -13,8 +13,10 @@ const Banner = (props: any) => {
           animate={{ y: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <h1 className=" text-4xl text-white font-bold">{props.title}</h1>
-          <div className="flex flex-col md:flex-row">
+          <h1 className=" text-xs md:text-xl text-white">{props.sub}</h1>
+          <h1 className=" text-xl md:text-3xl text-white w-[300px] md:w-auto font-bold">{props.title}</h1>
+          <p className=" text-sm md:text-lg text-white w-[400px] md:w-[900px] ">{props.description}</p>
+          <div className="flex flex-col md:flex-row mt-5">
             <Link href={"/services"}>
               <button className="btn bg-rose-600 rounded-full text-white hover:bg-rose-500 mb-2 ml-2 ">
                 {" "}

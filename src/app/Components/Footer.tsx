@@ -1,7 +1,8 @@
 "use client";
 import Link from 'next/link';
 import {FaUserDoctor,FaBed} from 'react-icons/fa6'
-import {BiHappyHeartEyes} from 'react-icons/bi'
+import {BiHappyHeartEyes,BiSolidPhoneCall} from 'react-icons/bi'
+import {MdOutlineEmail} from 'react-icons/md'
 import { useRouter } from 'next/navigation';
 
 export default function FooterPage() {
@@ -47,7 +48,22 @@ export default function FooterPage() {
         </div>
        
       </div>
-      <div className=" bg-rose-600 py-3">
+      
+      <div className=" bg-rose-600 py-3 ">
+      <div className=' flex p-4 items-center justify-center text-white opacity-70' >
+        <div className='flex justify-center items-center mx-5'>
+          <MdOutlineEmail className='text-3xl' />
+          
+          <h1 className='text-2xl ml-5'>hospital.sahidsmriti@gmail.com</h1>
+        </div>
+        <div className='flex justify-center items-center'>
+          <BiSolidPhoneCall className='text-3xl' />
+          <h1 className='text-2xl ml-3'>
+          078-411055 , 078-590355
+          </h1>
+        </div>
+
+      </div>
             <p className='text-white opacity-70 text-center'>
                 &copy; Sahid Smriti Samudayik Hospital 2023 All Rights Reserved.
             </p>
