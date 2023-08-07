@@ -50,7 +50,7 @@ export default function FooterPage() {
       </div>
       
       <div className=" bg-rose-600 py-3 ">
-      <div className=' flex p-4 items-center justify-center text-white opacity-70' >
+      <div className=' flex flex-col md:flex-row p-4 items-center justify-center text-white opacity-70' >
         <div className='flex justify-center items-center mx-5'>
           <MdOutlineEmail className='text-3xl' />
           
