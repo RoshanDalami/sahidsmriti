@@ -12,6 +12,7 @@ export default function AppointmentDetails() {
     number: "",
     email: "",
     date: "",
+    message :'',
   });
   const [loading , setLoading] = useState(false);
   const { id } = useParams();
@@ -40,6 +41,7 @@ export default function AppointmentDetails() {
             <h1 className="text-xl">Patient Email : {details.email}</h1>
             <h1 className="text-xl">Patient Mobile : {details.number}</h1>
             <h1 className="text-xl">Booking Date : {details.date}</h1>
+            <h1 className="text-xl">Problem : {details.message}</h1>
           </div>
           <Link href={"/appointment"}>
             <button className="bg-blue-600 px-4 py-2 text-white hover:bg-blue-500 mt-10">
