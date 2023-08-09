@@ -7,5 +7,5 @@ export const Chairman = [
         title: 'Nimanansa Neupane ',
         image : ChairmanImg,
         degniation: 'Chairman'
-    }
+    },
 ]
