@@ -41,7 +41,7 @@ export default function NavBar() {
           </div>
           <ul className=" hidden font-bold text-black md:flex  md:justify-end  md:ml-[150px]   ">
             {[
-              ["About", "/about"],
+              ["About", "/about/history"],
               ["Services", "/services"],
               ["Sepcialist Services", "/specialist"],
               ["Doctors", "/doctor"],
@@ -90,7 +90,7 @@ export default function NavBar() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             {[
-              ["About", "/about"],
+              ["About", "/about/history"],
               ["Services", "/services"],
               ["Sepcialist Services", "/specialist"],
               ["Doctors", "/doctor"],

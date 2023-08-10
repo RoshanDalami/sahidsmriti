@@ -6,7 +6,7 @@ export const Doctor = [
      id:nanoid(),
      title : 'Dr.Sudarshan Pandey',
      image : doctor01,
-     description : 'Specialist In Orthology'
+     description : 'Specialist In Orthopedic'
         
     },
     {

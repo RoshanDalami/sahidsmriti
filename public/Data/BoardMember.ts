@@ -13,6 +13,8 @@ import board11 from "../assets/BoardMember/boradMember07.jpeg";
 import board12 from "../assets/BoardMember/boradMember17.jpeg";
 import board13 from "../assets/BoardMember/boradMember13.jpeg";
 import board14 from "../assets/BoardMember/boradMember11.jpeg";
+import board15 from "../assets/BoardMember/boardMember19.jpeg";
+import board16 from "../assets/BoardMember/boardMember20.jpeg";
 
 export const BoardMember = [
   {
@@ -97,6 +99,18 @@ export const BoardMember = [
     id: nanoid(),
     title: "Ramchandra Adhakari",
     image: board14,
+    degniation : 'Board Member'
+  },
+  {
+    id: nanoid(),
+    title: "Basanta Ghimire",
+    image: board15,
+    degniation : 'Board Member'
+  },
+  {
+    id: nanoid(),
+    title: "Krishnaram Poudel",
+    image: board16,
     degniation : 'Board Member'
   },
 ];
