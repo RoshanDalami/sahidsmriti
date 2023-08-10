@@ -1,14 +1,14 @@
 "use client";
 
-import './globals.css'
+import "../globals.css";
 // import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import NavBar from "@/app/(public)/Components/Navbar";
+import NavBar from "./Components/Navbar";
 import { CssBaseline } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Toaster } from "react-hot-toast";
 import { useParams } from "next/navigation";
-import FooterPage from "@/app/(public)/Components/Footer";
+import FooterPage from "./Components/Footer";
 import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,10 +33,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Toaster position="top-center" />
 
-       
+       <NavBar/>
 
         {children}
-       
+       <FooterPage/>
       </body>
     </html>
   );
