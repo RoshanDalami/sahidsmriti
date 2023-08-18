@@ -13,16 +13,16 @@ import Link from 'next/link';
 
 export default function ActionAreaCard(props:any) {
   return (
-    <Link href={''} className='m-6'>
-    <Card sx={{ maxWidth: 345 }} className=' group h-auto w-auto hover:bg-indigo-600 hover:text-white md:w-auto shadow-2xl '>
+   
+    <Card  className=' group h-auto w-auto hover:bg-indigo-600 hover:text-white md:w-auto shadow-2xl m-6'>
       <CardActionArea className=' overflow-hidden  '>
         <Image src={props.image} alt='' className='group-hover:scale-110 transition-all ease-in-out  h-[350px]'/>
       </CardActionArea>
       <CardActionArea>
 
-        <div >
+        <div className='text-center' >
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" >
+          <Typography gutterBottom variant="h5" component="div"  >
             {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary ">
@@ -32,6 +32,6 @@ export default function ActionAreaCard(props:any) {
         </div>
       </CardActionArea>
     </Card>
-    </Link>
+    
   );
 }

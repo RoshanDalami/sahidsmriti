@@ -4,6 +4,8 @@ import {Clinical }from '../../../../public/Data/clinical';
 import {Lab} from '../../../../public/Data/Lab';
 import {Radiographer} from  '../../../../public/Data/Radiographer';
 import {PharmacyData} from  '../../../../public/Data/pharmacy';
+import { WardHelper } from '../../../../public/Data/WardHelper';
+import {Security} from '../../../../public/Data/Security'
 import ActionAreaCardStaff from '../Components/StaffCard';
 
 export default function StaffPage(){
@@ -54,6 +56,30 @@ export default function StaffPage(){
             <div className='flex items-center justify-center flex-wrap mb-20'>
             {
                     Radiographer.map((item:any)=>{
+                        return(
+                            <ActionAreaCardStaff key={item.id} title={item.title} image={item.image} description={item.degnation} />
+                        )
+                    })
+                }
+            </div>
+           </div>
+           <div className='m-4'>
+            <h1 className='text-center text-4xl text-white'>Ward Helper Staff</h1>
+            <div className='flex items-center justify-center flex-wrap mb-20'>
+            {
+                    WardHelper.map((item:any)=>{
+                        return(
+                            <ActionAreaCardStaff key={item.id} title={item.title} image={item.image} description={item.degnation} />
+                        )
+                    })
+                }
+            </div>
+           </div>
+           <div className='m-4'>
+            <h1 className='text-center text-4xl text-white'>Security</h1>
+            <div className='flex items-center justify-center flex-wrap mb-20'>
+            {
+                    Security.map((item:any)=>{
                         return(
                             <ActionAreaCardStaff key={item.id} title={item.title} image={item.image} description={item.degnation} />
                         )

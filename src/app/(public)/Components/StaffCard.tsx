@@ -13,8 +13,8 @@ import Link from 'next/link';
 
 export default function ActionAreaCardStaff(props:any) {
   return (
-    <Link href={''} className='m-6'>
-    <Card sx={{ maxWidth: 345 }} className=' group h-auto w-auto hover:bg-indigo-600 hover:text-white md:w-auto shadow-2xl '>
+    
+    <Card  className=' group h-auto w-[200px] hover:bg-indigo-600 hover:text-white md:w-auto shadow-2xl m-6 '>
       <CardActionArea>
 
         <div >
@@ -29,6 +29,6 @@ export default function ActionAreaCardStaff(props:any) {
         </div>
       </CardActionArea>
     </Card>
-    </Link>
+   
   );
 }

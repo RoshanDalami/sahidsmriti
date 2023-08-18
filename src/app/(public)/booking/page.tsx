@@ -128,7 +128,7 @@ export default function BookingForm() {
           <AiOutlineHistory className="text-4xl" />
           <div className="ml-10 flex flex-col">
             <span className= "text-2xl">Glorious History</span>
-            <span>initiated in 2064 BS, as a community hospital</span>
+            <span>initiated in 2067 BS, as a community hospital</span>
           </div>
         </div>
         <div className="flex  hover:bg-rose-500 px-5 py-3 rounded items-center ">

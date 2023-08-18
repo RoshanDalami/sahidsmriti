@@ -16,14 +16,14 @@ export default function FooterPage() {
         <div className='  flex justify-center items-center'>
         <FaUserDoctor className='text-[100px] text-black opacity-70 ' />
           <section className="p-10 flex flex-col justify-center items-center rounded-lg text-black my-3 md:mx-3">
-            <span className="text-3xl font-extrabold opacity-70">50+</span>
+            <span className="text-3xl font-extrabold opacity-70">40+</span>
             <span className="text-xl opacity-70">Medical Team</span>
           </section>
         </div>
         <div className=' flex justify-center items-center'>
         <FaBed className='text-[100px] text-black opacity-70 ' />
           <section className="p-10 flex flex-col justify-center items-center rounded-lg text-black my-3 md:mx-3">
-            <span className="text-3xl font-extrabold opacity-70">20+</span>
+            <span className="text-3xl font-extrabold opacity-70">25+</span>
             <span className="text-xl opacity-70">Hospital Bed</span>
           </section>
         </div>

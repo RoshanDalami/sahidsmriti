@@ -22,7 +22,7 @@ export const Clinical = [
     },
     {
         id:4,
-        title:'Khem Kumari Chaudhary',
+        title:'Indrabhawan Chaudhary',
         
         degnation : 'Clinical Staff'
     },
@@ -41,6 +41,24 @@ export const Clinical = [
     {
         id:7,
         title:'Sakina Chaudhary',
+        
+        degnation : 'Clinical Staff'
+    },
+    {
+        id:8,
+        title:'Bishnu Maya Thapa',
+        
+        degnation : 'Clinical Staff'
+    },
+    {
+        id:9,
+        title:'Samjhana Shrestha',
+        
+        degnation : 'Clinical Staff'
+    },
+    {
+        id:10,
+        title:'Pradhumman Pandey',
         
         degnation : 'Clinical Staff'
     },

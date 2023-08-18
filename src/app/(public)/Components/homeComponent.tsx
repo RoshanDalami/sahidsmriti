@@ -12,7 +12,7 @@ export default function HomeMid(){
             <section className="px-4 mx-10 ">
           <h1 className="font-bold text-3xl py-3 ">Namaste</h1>
           <p className=" md:text-justify">
-            The  Sahid Smriti Samudayik Hospital was established in 2064 BS
+            The  Sahid Smriti Samudayik Hospital was established in 2067 BS
             driven by the Vision to provide best medical healthcare to the
             people of Chitwan and its neighboring district so that the people be
             treated well as they were compelled to travel out of even for minor
