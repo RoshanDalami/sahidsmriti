@@ -3,7 +3,7 @@ import Image from "next/image";
 import BirthingImage from "../../../../../public/assets/icons/birthing.svg";
 import { MdBabyChangingStation } from "react-icons/md";
 import { Birthing } from "../../../../../public/Data/birthing";
-import Card from '../../Components/Card'
+import ActionAreaCardStaff from '../../Components/StaffCard';
 
 export default function BirthingPage() {
   return (
@@ -44,7 +44,7 @@ export default function BirthingPage() {
       {
         Birthing && Birthing.map((item)=>{
         return(
-          <Card key={item.id} title={item.title} description={item.degniation} image={item.image} />
+          <ActionAreaCardStaff key={item.id} title={item.title} description={item.degniation} image={item.image} />
           )  
           
         })

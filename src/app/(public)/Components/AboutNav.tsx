@@ -9,9 +9,6 @@ export default function AboutNavPage(){
                 <NavLink href={'/about/history'}>
                     <p className="text-xl px-2 md:border-r-2 border-r-gray-500 py-3 " >Histroy</p>
                 </NavLink>
-                <NavLink href={'/about/futureplan'}>
-                    <p className="text-xl px-2 md:border-r-2 border-r-gray-500 py-3 ">Future Plans</p>
-                </NavLink>
                 <NavLink href={'/about/president'}>
                     <p className="text-xl text-center px-2 md:border-r-2 border-r-gray-500 py-3 ">President & Vice President</p>
                 </NavLink>

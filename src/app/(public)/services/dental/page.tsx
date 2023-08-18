@@ -3,7 +3,7 @@ import { PiToothThin } from "react-icons/pi";
 import { Dental } from "../../../../../public/Data/Dental";
 import Image from "next/image";
 import DentalImage from "../../../../../public/assets/dental.png";
-import Card from "@/app/(public)/Components/Card";
+import ActionAreaCardStaff from '../../Components/StaffCard';
 
 const DentalPage = () => {
   return (
@@ -38,7 +38,7 @@ const DentalPage = () => {
         {Dental &&
           Dental.map((item) => {
             return (
-              <Card
+              <ActionAreaCardStaff
                 key={item.id}
                 title={item.title}
                 description={item.description}

@@ -3,8 +3,7 @@ import Image from "next/image";
 import radioImage from '../../../../../public/assets/icons/undraw_medical_research_qg4d.svg'
 import { Radiographer } from "../../../../../public/Data/Radiographer";
 import { LiaXRaySolid } from "react-icons/lia";
-
-import Card from '@/app/(public)/Components/Card';
+import ActionAreaCardStaff from "../../Components/StaffCard";
 export default function XrayPage(){
     return(
         <div>
@@ -32,7 +31,7 @@ export default function XrayPage(){
             <div className="flex flex-wrap justify-center">
                 {
                     Radiographer && Radiographer.map((item)=>{
-                        return <Card key={item.id} title={item.title} image={item.image} description={item.degnation}  />
+                        return <ActionAreaCardStaff key={item.id} title={item.title} image={item.image} description={item.degnation}  />
                     })
                 }
             </div>

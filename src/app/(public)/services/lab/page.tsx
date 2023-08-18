@@ -4,7 +4,7 @@ import Card from '@/app/(public)/Components/Card';
 import Image from "next/image";
 import { GiTestTubes } from "react-icons/gi";
 import labImage from '../../../../../public/assets/lab.svg'
-
+import ActionAreaCardStaff from "../../Components/StaffCard";
 export default function LabPage(){
     return(
         <div>
@@ -40,7 +40,7 @@ export default function LabPage(){
         <div className="flex flex-wrap justify-center">
             {
                 Lab && Lab.map((item)=>{
-                    return <Card key={item.id} title={item.title} image={item.image} description={item.degnation}  />
+                    return <ActionAreaCardStaff key={item.id} title={item.title} image={item.image} description={item.degnation}  />
                 })
             }
         </div>

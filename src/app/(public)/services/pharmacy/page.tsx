@@ -2,6 +2,7 @@
 import { PharmacyData } from "../../../../../public/Data/pharmacy"
 import Card from '@/app/(public)/Components/Card';
 import { GiMedicines } from "react-icons/gi";
+import ActionAreaCardStaff from "../../Components/StaffCard";
 
 export default function PharmacyPage(){
     return(
@@ -37,7 +38,7 @@ export default function PharmacyPage(){
 
             {
                 PharmacyData && PharmacyData.map((item)=>{
-                    return <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+                    return <ActionAreaCardStaff key={item.id} title={item.title} description={item.description} image={item.image} />
                 })
             }
             </div>

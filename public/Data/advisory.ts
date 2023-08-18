@@ -11,6 +11,7 @@ import Advisory09 from '../assets/advisory/advisory02.jpeg'
 import Advisory10 from '../assets/advisory/advisory10.jpeg'
 import Advisory11 from '../assets/advisory/advisory04.jpeg'
 import Advisory12 from '../assets/advisory/advisory08.jpeg'
+import Advisory13 from '../assets/advisory/advisory11.jpeg'
 
 export const Advisory = [
     {
@@ -57,16 +58,16 @@ export const Advisory = [
     },
     {
         id:nanoid(),
-        title:"Yekadev Pandey",
-        image: Advisory08,
+        title:"Yek dev Pandey",
+        image: Advisory13,
         description : "Advisory Board Member"
     },
-    {
-        id:nanoid(),
-        title:"Shivalal Kandel",
-        image: Advisory09,
-        description : "Advisory Board Member"
-    },
+    // {
+    //     id:nanoid(),
+    //     title:"Shivalal Kandel",
+    //     image: Advisory09,
+    //     description : "Advisory Board Member"
+    // },
     {
         id:nanoid(),
         title:"Karna Bahadur B.K",

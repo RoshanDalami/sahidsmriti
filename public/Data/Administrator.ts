@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
 import Manager from '../assets/administator/manager.jpeg';
 import Accountant from '../assets/administator/accountant.jpeg'
+import store from '../assets/administator/store.jpeg'
+import rec from '../assets/administator/rec.jpeg'
 
 export const Administrator = [
     {
@@ -18,13 +20,13 @@ export const Administrator = [
     {
         id:nanoid(),
         title : 'Sabita Neupane',
-        image : Manager,
+        image : rec,
         degniation:'Receptionist',
     },
     {
         id:nanoid(),
         title : 'Narayan Parajuli',
-        image : Manager,
+        image : store,
         degniation:'Store keeper',
     },
 ]

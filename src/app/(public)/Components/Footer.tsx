@@ -12,7 +12,7 @@ export default function FooterPage() {
   }
   return (
     <div>
-      <div className='flex flex-col flex-wrap md:flex-row justify-between'>
+      <div className='flex flex-col flex-wrap md:flex-row justify-between mt-10'>
         <div className='  flex justify-center items-center'>
         <FaUserDoctor className='text-[100px] text-black opacity-70 ' />
           <section className="p-10 flex flex-col justify-center items-center rounded-lg text-black my-3 md:mx-3">

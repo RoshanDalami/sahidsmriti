@@ -16,6 +16,7 @@ import board14 from "../assets/BoardMember/boradMember11.jpeg";
 import board15 from "../assets/BoardMember/boardMember19.jpeg";
 import board16 from "../assets/BoardMember/boardMember20.jpeg";
 
+
 export const BoardMember = [
   {
     id: nanoid(),
