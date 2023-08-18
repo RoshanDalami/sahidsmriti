@@ -8,9 +8,6 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import { CardActionArea } from '@mui/material';
 
-
-import Link from 'next/link';
-
 export default function ActionAreaCard(props:any) {
   return (
    

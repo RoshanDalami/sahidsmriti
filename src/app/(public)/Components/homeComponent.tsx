@@ -23,11 +23,11 @@ export default function HomeMid(){
           </p>
           <div className='flex mt-10 flex-col  justify-center md:flex-row '>
             <section className='bg-rose-600 p-10 flex flex-col justify-center items-center rounded-lg text-white my-3 md:mx-3'>
-                <span className='text-3xl font-extrabold opacity-70'>50+</span>
+                <span className='text-3xl font-extrabold opacity-70'>40+</span>
                 <span className='text-xl opacity-70'>Medical Team</span>
             </section>
             <section className='bg-rose-600 p-10 flex flex-col justify-center items-center rounded-lg text-white my-3 md:mx-3'>
-                <span className='text-3xl font-extrabold opacity-70'>20+</span>
+                <span className='text-3xl font-extrabold opacity-70'>25+</span>
                 <span className='text-xl opacity-70'>Hospital Bed</span>
             </section>
             <section className='bg-rose-600 p-10 flex flex-col justify-center items-center rounded-lg text-white my-3 md:mx-3'>
