@@ -21,22 +21,22 @@ export default function NavBar() {
   return (
     <>
         <div >
-      <div className="hidden md:flex md:flex-col my-3  w-[500px] mx-auto  ">
+      {/* <div className="hidden md:flex  my-3  w-[700px] mx-auto  ">
 
         <div className="flex  items-center ">
           <MdOutlineEmail className="text-2xl" />
 
           <h1 className="text-xl ml-5">hospital.sahidsmriti@gmail.com</h1>
         </div>
-        <div className='flex  items-center'>
+        <div className='flex  items-center ml-5'>
           <BiSolidPhoneCall className='text-2xl md:text-3xl' />
           <h1 className=' md:text-xl ml-3'>
           078-411055 , 078-590355
           </h1>
         </div>
-      </div>
+      </div> */}
 
-        <nav className="flex items-center justify-center  ">
+        <nav className="flex items-center justify-center my-2  ">
           <div className="flex items-center justify-center ">
             <Link href={"/"} className="text-2xl">
               <Image
