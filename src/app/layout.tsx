@@ -31,12 +31,8 @@ export default function RootLayout({
       <title> Sahid Smriti Samudayiak Hospital </title>
       <CssBaseline />
       <body className={inter.className}>
-        <Toaster position="top-center" />
-
-       
-
+        
         {children}
-       
       </body>
     </html>
   );
