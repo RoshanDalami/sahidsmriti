@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Hospital from '../../../../../public/assets/hospital.jpeg'
 import AboutNavPage from "../../Components/AboutNav";
+import VideoComp from "../../Components/VideoComp";
 export default function HistoryPage() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function HistoryPage() {
           </p>
             </div>
         </section>
+        <VideoComp/>
       </div>
     </>
   );

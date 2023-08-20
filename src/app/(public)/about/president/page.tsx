@@ -12,6 +12,8 @@ export default function PresidentPage(){
         </div>
         <section>
         <h1 className="text-center text-4xl pt-4 text-white">President</h1>
+       <div className="flex  flex-wrap items-center justify-center" >
+
         {Chairman &&
           Chairman.map((item) => (
             <Card
@@ -21,6 +23,7 @@ export default function PresidentPage(){
               description={item.degniation}
             />
           ))}
+       </div>
       </section>
 
       <section>

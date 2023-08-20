@@ -51,7 +51,7 @@ export default function CarouselGallery(props:any) {
   return (
     <div className="flex flex-col items-center justify-center mb-10">
       <div className="w-full">
-        <h1 className="text-center text-4xl my-4">{props.title}</h1>
+        <h1 className="text-center text-4xl my-4 text-white">{props.title}</h1>
         <Slider {...config}>
           {props.data.map((image:ImageOrientation) => {
             return (
