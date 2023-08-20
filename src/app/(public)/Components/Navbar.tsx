@@ -123,7 +123,7 @@ export default function NavBar() {
               </Link>
             ))}
             <div className="flex text-2xl w-[70px] items-center justify-between ">
-              <Link href={"/#"}>
+              <Link href={"https://www.facebook.com/sssaspatal?mibextid=9R9pXO"} target="__blank">
                 <FaFacebookSquare />
               </Link>
 

@@ -3,6 +3,8 @@
 import { MdPhoneInTalk } from "react-icons/md";
 import { LuMail } from "react-icons/lu";
 import { ImLocation } from "react-icons/im";
+import { FaFacebookSquare } from "react-icons/fa";
+import Link from "next/link";
 export default function ContactPage() {
   return (
     <div className="flex flex-col justify-center ">
@@ -39,13 +41,34 @@ export default function ContactPage() {
           <div className="flex items-center py-3 ">
             <section className=" bg-rose-600 rounded-full p-2">
 
-            <LuMail className="text-3xl text-white" />
+            <a href="mailto:hospital.sahidsmriti@gmail.com">
+                <LuMail className="text-3xl text-white"/>
+              </a>
             </section>
             <section className="ml-5 text-medium font-bold">
                 <p>Email</p>
+                <a href="mailto:hospital.sahidsmriti@gmail.com">
+
                 <p>
                     hospital.sahidsmriti@gmail.com
                 </p>
+                </a>
+            </section>
+          </div>
+          <div className="flex items-center py-3 ">
+            <section className=" bg-rose-600 rounded-full p-2">
+
+            <Link href={"https://www.facebook.com/sssaspatal?mibextid=9R9pXO"} target="__blank">
+                <FaFacebookSquare className="text-3xl text-white" />
+              </Link>
+            </section>
+            <section className="ml-5 text-medium font-bold">
+                <p>Facebook</p>
+                <Link href={"https://www.facebook.com/sssaspatal?mibextid=9R9pXO"} target="__blank">
+                <p>
+                Sahid Smiriti Community Hospital
+                </p>
+                </Link>
             </section>
           </div>
           <hr />
