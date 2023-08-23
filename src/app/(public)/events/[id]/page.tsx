@@ -42,7 +42,7 @@ export default function Event() {
   return (
     <React.Fragment>
 
-      <h1 className="font-bold text-3xl text-black text-center m-5">New & Event</h1>
+      <h1 className="font-bold text-3xl text-black text-center m-5">News & Events</h1>
 
       <div className="flex items-center flex-col justify-center ">
         {
