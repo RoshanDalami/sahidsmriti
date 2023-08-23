@@ -43,12 +43,13 @@ export default function NewsDetailPage() {
   return (
     <React.Fragment>
 
-      <h1 className="font-bold text-3xl text-black text-center m-5">New & Event</h1>
+
+      <h1 className="font-bold text-3xl text-black text-center m-5">News & Event</h1>
 
       <div className="flex items-center flex-col justify-center ">
         {
            data ?
-        <div className="bg-white p-3 rounded shadow-2xl">
+        <div className=" bg-slate-300 p-3 rounded shadow-2xl">
           <Image
             src={data.fileurl}
             alt=""
