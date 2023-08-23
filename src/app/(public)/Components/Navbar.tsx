@@ -51,7 +51,7 @@ export default function NavBar() {
               </h1>
             </Link>
           </div>
-          <ul className=" hidden font-bold text-black md:flex  md:justify-end  md:ml-[150px]   ">
+          <ul className=" hidden font-bold text-black md:flex md:flex-wrap md:justify-end  md:ml-[150px]   ">
             {[
               ["About", "/about/history"],
               ["Services", "/services"],
@@ -65,7 +65,7 @@ export default function NavBar() {
               <NavLink
                 href={url}
                 key={nanoid()}
-                className={` px-2 sm:font-normal sm:font-xs md:px-4  md:font-bold  lg:px-4 lg:py-3`}
+                className={` px-2 sm:font-normal sm:font-xs md:px-4  md:font-bold  lg:px-4 lg:py-3 flex flex-wrap`}
               >
                 <li>{title}</li>
               </NavLink>

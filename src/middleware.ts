@@ -28,6 +28,8 @@ export const config = {
       '/staff',
       '/appointment',
       '/signup',
+      '/news',
+      '/news/:id',
       
     ],
   }

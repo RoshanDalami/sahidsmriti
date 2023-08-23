@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import CircularProgress from "@mui/material/CircularProgress";
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast';
+import BackEndNavPage from '../nav'
 
 export default function AppointmentPage() {
   const [data, setData] = useState([]);
@@ -69,6 +70,7 @@ export default function AppointmentPage() {
 
   return (
     <div>
+      <BackEndNavPage/>
       <h1 className="text-4xl text-center mt-10">Appointments</h1>
       <button
         onClick={getData}

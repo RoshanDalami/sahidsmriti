@@ -9,6 +9,7 @@ import BookingForm from "./booking/page";
 import { useState } from "react";
 
 import axios from 'axios';
+import EventsPage from "./events/page";
 
 export default function Home() {
   return (
@@ -46,6 +47,9 @@ export default function Home() {
       </div>
       <div id="booking">
      <BookingForm />
+      </div>
+      <div>
+        <EventsPage/>
       </div>
       
     </>
