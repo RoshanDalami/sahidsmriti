@@ -55,7 +55,7 @@ export default function NavBar() {
             {[
               ["About", "/about/history"],
               ["Services", "/services"],
-              ["Sepcialist Services", "/specialist"],
+              ["Specialist Services", "/specialist"],
               ["Doctors", "/doctor"],
               ["Staffs", "/staff"],
               ["Administrator", "/administrator"],
@@ -104,7 +104,7 @@ export default function NavBar() {
             {[
               ["About", "/about/history"],
               ["Services", "/services"],
-              ["Sepcialist Services", "/specialist"],
+              ["Specialist Services", "/specialist"],
               ["Doctors", "/doctor"],
               ["Staffs", "/staff"],
               ["Administrator", "/administrator"],

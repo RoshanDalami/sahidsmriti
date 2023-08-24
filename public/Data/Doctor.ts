@@ -15,7 +15,7 @@ export const Doctor = [
      id:nanoid(),
      title : 'Dr. Deepak Pandey',
      image : doctor02,
-     description : 'Medical Office'
+     description : 'Medical Officer'
         
     },
     {
