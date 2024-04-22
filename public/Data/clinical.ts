@@ -8,12 +8,12 @@ export const Clinical = [
         
         degnation : 'Clinical Staff'
     },
-    {
-        id:2,
-        title:'Manoj Chaudhary',
+    // {
+    //     id:2,
+    //     title:'Manoj Chaudhary',
         
-        degnation : 'Clinical Staff'
-    },
+    //     degnation : 'Clinical Staff'
+    // },
     {
         id:3,
         title:'Sobita Thapa Rana',
@@ -27,6 +27,12 @@ export const Clinical = [
         degnation : 'Clinical Staff'
     },
     {
+        id:11,
+        title:'Sangita parajuli',
+        
+        degnation : 'Staff Nurse'
+    },
+    {
         id:5,
         title:'Amrita Chaudhary',
         
@@ -38,12 +44,12 @@ export const Clinical = [
         
         degnation : 'Clinical Staff'
     },
-    {
-        id:7,
-        title:'Sakina Chaudhary',
+    // {
+    //     id:7,
+    //     title:'Sakina Chaudhary',
         
-        degnation : 'Clinical Staff'
-    },
+    //     degnation : 'Clinical Staff'
+    // },
     {
         id:8,
         title:'Bishnu Maya Thapa',

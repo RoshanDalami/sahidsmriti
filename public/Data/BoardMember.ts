@@ -16,25 +16,29 @@ import board14 from "../assets/BoardMember/boradMember11.jpeg";
 import board15 from "../assets/BoardMember/boardMember19.jpeg";
 import board16 from "../assets/BoardMember/boardMember20.jpeg";
 import board17 from "../assets/BoardMember/boardMember21.jpeg";
+import board18 from "../assets/BoardMember/boardMember23.jpeg";
+import board20 from "../assets/BoardMember/boardMember24.jpeg";
+import board19 from '../assets/Accounting/accounting01.jpeg';
+
 
 
 export const BoardMember = [
   {
     id: nanoid(),
-    title: "Dil Bahadur thapa",
-    image: board01,
+    title: "Khemananda Neupane",
+    image: board08,
     degniation : 'Secretary '
   },
   {
     id: nanoid(),
-    title: "Laxmi Bhusal Kharel",
-    image: board02,
+    title: "Shovakar Bhusal",
+    image: board18,
     degniation : 'Vice Secretary '
   },
   {
     id: nanoid(),
-    title: "Tikaram Bhandari",
-    image: board03,
+    title: "Nathuram Chhetri",
+    image: board19,
     degniation : 'Treasurer'
   },
   {
@@ -87,6 +91,12 @@ export const BoardMember = [
   },
   {
     id: nanoid(),
+    title: "Laxman Prasad Pandey",
+    image: board20,
+    degniation : 'Board Member'
+  },
+  {
+    id: nanoid(),
     title: "Suraj Kc",
     image: board12,
     degniation : 'Board Member'
@@ -95,6 +105,12 @@ export const BoardMember = [
     id: nanoid(),
     title: "Baburam Paudel",
     image: board13,
+    degniation : 'Board Member'
+  },
+  {
+    id: nanoid(),
+    title: "Laxmi Bhusal kharel",
+    image: board02,
     degniation : 'Board Member'
   },
   {

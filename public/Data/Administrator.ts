@@ -23,11 +23,11 @@ export const Administrator = [
         image : rec,
         degniation:'Receptionist',
     },
-    {
-        id:nanoid(),
-        title : 'Narayan Parajuli',
-        image : store,
-        degniation:'Store keeper',
-    },
+    // {
+    //     id:nanoid(),
+    //     title : 'Narayan Parajuli',
+    //     image : store,
+    //     degniation:'Store keeper',
+    // },
 ]
 

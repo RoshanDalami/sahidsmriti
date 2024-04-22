@@ -2,20 +2,28 @@ import { nanoid } from "nanoid";
 import doctor01 from '../assets/Doctor/doctor01.jpeg';
 import doctor02 from '../assets/Doctor/doctor02.jpeg';
 import doctor03 from '../assets/Doctor/doctor03.jpeg';
+import dummy from '../dummy.jpg'
 
 export const Doctor = [
-    {
-     id:nanoid(),
-     title : 'Dr.Sudarshan Pandey',
-     image : doctor01,
-     description : 'Orthopedic surgeon'
+    // {
+    //  id:nanoid(),
+    //  title : 'Dr.Sudarshan Pandey',
+    //  image : doctor01,
+    //  description : 'Orthopedic surgeon'
         
-    },
+    // },
+    // {
+    //  id:nanoid(),
+    //  title : 'Dr. Deepak Pandey',
+    //  image : doctor02,
+    //  description : 'Medical Officer'
+        
+    // },
     {
      id:nanoid(),
-     title : 'Dr. Deepak Pandey',
-     image : doctor02,
-     description : 'Medical Officer'
+     title : 'Dr. Aakashbabu Pantha',
+     image : dummy,
+     description : ' '
         
     },
     {
