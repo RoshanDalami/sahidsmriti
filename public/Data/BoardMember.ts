@@ -47,94 +47,94 @@ export const BoardMember = [
     image: board04,
     degniation : 'Board Member'
   },
-  {
-    id: nanoid(),
-    title: "Madhav Tiwari",
-    image: board05,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Dipak Lamsal",
-    image: board06,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Tuk Parsad Basyal",
-    image: board07,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Khemananda Neupane",
-    image: board08,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Rudra Bahadur Ale Magar",
-    image: board09,
-    degniation : 'Board Member'
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "Madhav Tiwari",
+  //   image: board05,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Dipak Lamsal",
+  //   image: board06,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Tuk Parsad Basyal",
+  //   image: board07,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Khemananda Neupane",
+  //   image: board08,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Rudra Bahadur Ale Magar",
+  //   image: board09,
+  //   degniation : 'Board Member'
+  // },
   {
     id: nanoid(),
     title: "Durga Narayan Chaudhary",
     image: board10,
     degniation : 'Board Member'
   },
-  {
-    id: nanoid(),
-    title: "Gunja Bahadur Roka",
-    image: board11,
-    degniation : 'Board Member'
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "Gunja Bahadur Roka",
+  //   image: board11,
+  //   degniation : 'Board Member'
+  // },
   {
     id: nanoid(),
     title: "Laxman Prasad Pandey",
     image: board20,
     degniation : 'Board Member'
   },
-  {
-    id: nanoid(),
-    title: "Suraj Kc",
-    image: board12,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Baburam Paudel",
-    image: board13,
-    degniation : 'Board Member'
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "Suraj Kc",
+  //   image: board12,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Baburam Paudel",
+  //   image: board13,
+  //   degniation : 'Board Member'
+  // },
   {
     id: nanoid(),
     title: "Laxmi Bhusal kharel",
     image: board02,
     degniation : 'Board Member'
   },
-  {
-    id: nanoid(),
-    title: "Ramchandra Adhakari",
-    image: board14,
-    degniation : 'Board Member'
-  },
-  {
-    id: nanoid(),
-    title: "Basanta Ghimire",
-    image: board15,
-    degniation : 'Board Member'
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "Ramchandra Adhakari",
+  //   image: board14,
+  //   degniation : 'Board Member'
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "Basanta Ghimire",
+  //   image: board15,
+  //   degniation : 'Board Member'
+  // },
   {
     id: nanoid(),
     title: "Krishnaram Poudel",
     image: board16,
     degniation : 'Board Member'
   },
-  {
-    id: nanoid(),
-    title: "Rishidevdas Patel",
-    image: board17,
-    degniation : 'Board Member'
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "Rishidevdas Patel",
+  //   image: board17,
+  //   degniation : 'Board Member'
+  // },
 ];
